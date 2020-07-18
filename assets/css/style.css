@@ -1,6 +1,11 @@
 /*--------------------------------------Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fondamento:ital@1&display=swap');
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     margin: 0;
     background-color: #A8DADC;
@@ -55,7 +60,7 @@ h4 {
 
 .nav a:hover {
     background-color: #BDD5EA;
-    color: #000;
+    color: #E63946;
 }
  .nav a.active {
      background-color: #1D3557;
@@ -104,14 +109,20 @@ hvr-sweep-top-bottom:before {
  }
 
  .hero-text {
-     color: #F1FAEE;
      background-color: #333;
      height: 100%;
      max-width: 430px;
      text-align: center;
-     padding: 15px;
-     font-family: "Acme", serif;
-     font-size: 20px;
+     padding: 10px 15px;
+     margin: 0 auto;
+ }
+
+ .hero-text p {
+     margin-top: 10px;
+    font-family: fantasy;
+    font-size: 15px;
+    color: #F1FAEE;
+    line-height: 27px;
  }
 
   .w3-content img {
@@ -124,12 +135,25 @@ hvr-sweep-top-bottom:before {
   .hero-text h2 {
         color: #FE5F55;
         font-family: "Fondamento", serif;
+        font-size: 1.5em;
+}
+
+
     }
     
+    /*--------------------------------------Audio */
+audio {
+     width: 280px;
+}
+.audio-controls {
+    padding-bottom: 10px;
+   
+}
+
 
  @media screen and (max-width: 600px) {
     .hero {
-     height: 300px;
+     height: auto;
      background-size: cover;
     }
 
@@ -137,16 +161,25 @@ hvr-sweep-top-bottom:before {
         width: 100%;
         overflow: hidden;
         height: auto;
-        font-size: 14px;
         padding: 10px;
+        margin: 0 auto;
     }
     
     .hero-text h2 {
         font-size: 17px;
     }
+
+    .hero-text p {
+         font-size: 14px;
+         font-weight: 100;
+    }
     
     .w3-content img {
         height: 176px;
+    }
+
+    audio {
+     width: 280px;
     }
 }
 
