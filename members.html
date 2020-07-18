@@ -28,40 +28,98 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <!--w3schools/***************************************************************************************
-            *    Title: <Responsive Topnav Tutorial> <w3-animate-fading gallery>
-            *    Author: <W3schools>
-            *    Date: <7/16/20>
-            *    Availability: <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav>
-            *                   <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_fading>
-            *
-            ***************************************************************************************/-->
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("topNavmenu");
-                    if (x.className === "nav") {
-                        x.className += " responsive";
-                    }
-                    else {
-                        x.className = "nav";
-                    }
-                }
-            </script>
-            <div class=" row no-gutters hero container-fluid">
+        <div class=" row no-gutters hero bg-color-hero container-fluid">
                 <div class="w3-content w3-section col-md-8">
+                    <img class="" src="assets/images/hero-bg-1.jpg">
                    
                 </div>
-                <div class="col-md-4 hero-text">
-                   
+                <div class="col-md-4 hero-text bg-color-hero-text">
+                    <h2>Dave Brubeck Quartet</h2>
+                     <p>
+                        Brubeck organized the Dave Brubeck Quartet in 1951, with Paul Desmond on alto saxophone. 
+                        They took up a long residency at San Francisco's Black Hawk nightclub and gained great 
+                        popularity touring college campuses, recording a series of albums with such titles as 
+                        Jazz at Oberlin (1953), Jazz at the College of the Pacific (1953), and Brubeck's debut 
+                        on Columbia Records, Jazz Goes to College (1954).
+                     </p>
+                     
                 </div>
-                    
             </div>
         </div>
     </header>
 
-    <section>
+    <section class="container-fluid section-column quartet-members bg-color-quartet-members">
+            <!--w3schools/***************************************************************************************
+                    *    Title: <Tab Menu Tutorial> <How TO - Tabs>
+                    *    Author: <W3schools>
+                    *    Date: <7/18/20>
+                    *    Availability: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+                    *
+                    ***************************************************************************************/-->
+        <div class="row">
+            <div class="col-md-12">
+            <h3>Quartet Members</h3>
+                <div class="row">
+                    
 
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    </div>
+
+                    <div id="London" class="tabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p> 
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+
+            <script>
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            </script>
+        </div>
+        </div>
+   
+        </div>
     </section>
+
    <footer class="container-fluid bg-color-footer">
         <div class="row">
             <div class="col-sm-12 container-fluid uppercase">
