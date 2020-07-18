@@ -1,6 +1,7 @@
 /*--------------------------------------Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fondamento:ital@1&display=swap');
 
+/*--------------------------------------Root/ body */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,7 +14,25 @@ body {
 
 /*--------------------------------------colors */
 
+.bg-color-real-ambassadors {
+    background-color: #000;
+}
 
+.bg-color-hero {
+     background-color: #333;
+}
+
+.bg-color-hero-text {
+    background-color: #333;
+}
+
+.bg-color-footer { 
+    background-color: #1D3557;
+}
+
+.bg-color-nav {
+      background-color: #457B9D;
+}
 
 /*--------------------------------------Special paddings/margins/text */
 h1,
@@ -37,13 +56,24 @@ h4 {
     display: inline-block;
 }
 
+.section-column {
+padding: 0 15px 0 60px;;
+
+}
+
+@media screen and (max-width: 600px) {
+    .section-column {
+        padding: 0 30px 0px 30px;
+    }
+
+}
+
 
 /*--------------------------------------Navigation  */
 
 
 .nav {
     overflow: hidden;
-    background-color: #457B9D;
 }
 
 .nav a {
@@ -102,14 +132,12 @@ hvr-sweep-top-bottom:before {
 
 /*--------------------------------------Hero  */
  .hero {
-     background-color: #333;
      border-bottom: 5px solid #E63946;
      border-top: 5px solid #E63946;
      height: 350px;
  }
 
  .hero-text {
-     background-color: #333;
      height: 100%;
      max-width: 430px;
      text-align: center;
@@ -183,10 +211,56 @@ audio {
     }
 }
 
+/*--------------------------------------The Real Ambassadors */
+.real-ambassadors {
+    border-bottom: 5px solid #E63946;
+    max-height: 380px;
+}
+
+.real-ambassadors h3 { 
+    color: #F1FAEE;
+    font-family: "Acme", serif;  
+    padding: 45px 0 20px;
+}
+
+.real-ambassadors p {
+    color: #F1FAEE;
+    font-family: "Fondamento", serif;
+    font-size: 1.2em;
+    margin-top: 15x;
+}
+
+.real-ambassador-img {
+    height: 100%;
+    padding: 15px 0 0px 60px;
+    max-height: 360px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .real-ambassadors {
+        max-height: 100%;
+    }
+
+    .real-ambassadors h3 { 
+        padding: 15px;
+        font-size: 1.5em;
+    }
+
+    .real-ambassadors p {
+        font-size: 1em;  
+}
+   .real-ambassador-img {
+        height: 100%;
+        padding: 0;
+        max-height: 280px;
+        }
+}
+
 /*--------------------------------------Footer  */
 
 footer {
-    background-color: #1D3557;
     color: #F1FAEE;
     min-height: 120px;
     text-align: center;
