@@ -27,7 +27,7 @@ body {
 }
 
 .bg-color-quartet-members {
-    background-color: #000;
+    background-color: #333;
 }
 
 
@@ -141,7 +141,7 @@ hvr-sweep-top-bottom:before {
  .hero {
      border-bottom: 5px solid #E63946;
      border-top: 5px solid #E63946;
-     height: 350px;
+     height: auto;
  }
 
  .hero-text {
@@ -162,9 +162,7 @@ hvr-sweep-top-bottom:before {
 
   .w3-content img {
      width: 100%;
-     max-height: 338px;
-     margin-top: -15px;
-
+     max-height: 415px;
  }
 
   .hero-text h2 {
@@ -267,13 +265,14 @@ audio {
 
 /*--------------------------------------Quartet Members */
 .quartet-members {
-    border-bottom: 5px solid #E63946;
-    max-height: 380px;
-    background-color: #000;
+
+    border-top: 5px solid #E63946;
+    height: auto;
+    background-color: #333;
 }
 
 .quartet-members .tab {
-    background-color:#F1FAEE;
+    background-color:none;
 }
 
 .quartet-members .tablinks {
@@ -282,14 +281,34 @@ audio {
 }
 
 .quartet-members .tabcontent {
-    color:#F1FAEE;
-    background-color:#457B9D;
+    color: #F1FAEE;
+    background-color: #000;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-top: 30px solid #457B9D;
+    border-bottom: 30px solid #457B9D;
+    border-left: 15px solid #457B9D;
+    border-right: 15px solid #457B9D;
+    
 }
 
+.quartet-members .tabcontent img {
+    width: 70px;
+}
+
+ .quartet-members-text {
+     height: 100%;
+     max-width: 430px;
+     text-align: center;
+     padding: 10px 15px;
+     margin: 0 auto;
+ }
+
 .quartet-members h3 { 
-    color: #F1FAEE;
-    font-family: "Acme", serif;  
-    padding: 45px 0 20px;
+        color: #FE5F55;
+        font-family: "Fondamento", serif;
+        font-size: 1.5em;
+        margin-top: 15px;
 }
 
 .quartet-members p {
@@ -299,10 +318,9 @@ audio {
     margin-top: 15x;
 }
 
-.quartet-members-img {
-    height: 100%;
-    padding: 15px 0 0px 60px;
-    max-height: 360px;
+.quartet-members img {
+    width: 100%;
+     max-height: 333px;
 }
 
 
