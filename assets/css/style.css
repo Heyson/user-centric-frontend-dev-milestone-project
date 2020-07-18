@@ -219,7 +219,7 @@ audio {
 /*--------------------------------------The Real Ambassadors */
 .real-ambassadors {
     border-bottom: 5px solid #E63946;
-    max-height: 380px;
+    max-height: 254px;
 }
 
 .real-ambassadors h3 { 
@@ -238,7 +238,7 @@ audio {
 .real-ambassador-img {
     height: 100%;
     padding: 15px 0 0px 60px;
-    max-height: 360px;
+    max-height: 238px;
 }
 
 
@@ -313,7 +313,7 @@ audio {
 
 .quartet-members p {
     color: #F1FAEE;
-    font-family: "Fondamento", serif;
+    font-family: "Acme", serif;
     font-size: 1.2em;
     margin-top: 15x;
 }
