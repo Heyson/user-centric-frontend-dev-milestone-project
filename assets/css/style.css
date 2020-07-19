@@ -5,6 +5,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
@@ -142,6 +143,8 @@ hvr-sweep-top-bottom:before {
      border-bottom: 5px solid #E63946;
      border-top: 5px solid #E63946;
      height: auto;
+     background-image: url("/assets/images/sheet-music-bg.jpg");
+    background-size: cover;
  }
 
  .hero-text {
@@ -158,11 +161,14 @@ hvr-sweep-top-bottom:before {
     font-size: 15px;
     color: #F1FAEE;
     line-height: 27px;
+    padding: 15px;
  }
 
   .w3-content img {
      width: 100%;
      max-height: 415px;
+     padding: 10px;
+     border: 4px solid #457B9D
  }
 
   .hero-text h2 {
@@ -171,8 +177,6 @@ hvr-sweep-top-bottom:before {
         font-size: 1.5em;
 }
 
-
-    }
     
     /*--------------------------------------Audio */
 audio {
@@ -212,7 +216,7 @@ audio {
     }
 
     audio {
-     width: 280px;
+     width: 260px;
     }
 }
 
@@ -232,7 +236,6 @@ audio {
     color: #F1FAEE;
     font-family: "Fondamento", serif;
     font-size: 1.2em;
-    margin-top: 15x;
 }
 
 .real-ambassador-img {
@@ -269,6 +272,8 @@ audio {
     border-top: 5px solid #E63946;
     height: auto;
     background-color: #333;
+    background-image: url("/assets/images/sheet-music-bg.jpg");
+    background-size: cover;
 }
 
 .quartet-members .tab {
@@ -281,6 +286,7 @@ audio {
     color:#F1FAEE;
     background-color:#457B9D;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .quartet-members .tabcontent {
@@ -317,14 +323,15 @@ audio {
 
 .quartet-members p {
     color: #F1FAEE;
-    font-family: "Acme", serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 1.2em;
-    margin-top: 15x;
+    padding: 15px;
 }
 
 .quartet-members img {
     width: 100%;
      max-height: 333px;
+     padding: 10px;
 }
 
 
@@ -347,6 +354,99 @@ audio {
         padding: 0;
         max-height: 280px;
         }
+}
+
+/*--------------------------------------Photo gallery  -------*/
+.quartet-photos {
+    background-color: #333;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-bottom: 5px solid #E63946;
+    border-top: 5px solid #E63946;
+    padding: 15px;
+    background-image: url("/assets/images/sheet-music-bg.jpg");
+    background-size: cover;
+}
+
+ .quartet-photos-text {
+     height: auto;
+     max-width: 430px;
+     text-align: center;
+     padding: 10px 15px;
+     margin: 0 auto;
+ }
+
+.quartet-photos h2 { 
+        color: #FE5F55;
+        font-family: "Fondamento", serif;
+        font-size: 1.5em;
+        margin-top: 15px;
+        margin-bottom: 20px;
+}
+
+.quartet-photos p {
+    color: #F1FAEE;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.2em;
+}
+
+.quartet-photos img {
+    width: 100%;
+     max-height: 333px;
+     padding: 10px;
+}
+
+
+/*********************************************w3schools/*******************************************
+            *    Title: <Responsive Photo Gallery Tutorial> 
+            *    Author: <W3schools>
+            *    Date: <7/19/20>
+            *    Availability: <https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive>
+            *
+            ****************************************************************************************/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    max-height: 200px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #F1FAEE;
+    color: #333;
+}
+
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+  }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
