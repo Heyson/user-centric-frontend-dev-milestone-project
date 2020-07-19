@@ -1,485 +1,454 @@
 /*--------------------------------------Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fondamento:ital@1&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fondamento:ital@1&display=swap');
 /*--------------------------------------Root/ body */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
+ * {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    background-color: #A8DADC;
+ body {
+     margin: 0;
+     background-color: #A8DADC;
 }
-
 /*--------------------------------------colors */
-
-.bg-color-hero {
+ .bg-color-hero {
      background-color: #333;
 }
-
-.bg-color-hero-text {
-    background-color: #333;
+ .bg-color-hero-text {
+     background-color: #333;
 }
-
-.bg-color-real-ambassadors {
-    background-color: #000;
+ .bg-color-real-ambassadors {
+     background-color: #000;
 }
-
-.bg-color-quartet-members {
-    background-color: #333;
+ .bg-color-quartet-members {
+     background-color: #333;
 }
-
-
-.bg-color-footer { 
-    background-color: #1D3557;
+ .bg-color-footer {
+     background-color: #1D3557;
 }
-
-.bg-color-nav {
-      background-color: #457B9D;
+ .bg-color-nav {
+     background-color: #457B9D;
 }
-
 /*--------------------------------------Special paddings/margins/text */
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
+ h1, h2, h3, h4 {
+     margin: 0;
 }
-
-.uppercase {
-    text-transform: uppercase;
+ .uppercase {
+     text-transform: uppercase;
 }
-
-.general-sub {
-    font-family: "Acme", serif;
-    font-weight: 300;
-
+ .general-sub {
+     font-family: "Acme", serif;
+     font-weight: 300;
 }
-
-.inline-block {
-    display: inline-block;
+ .inline-block {
+     display: inline-block;
 }
-
-.section-column {
-padding: 0 15px 0 60px;;
-
+ .section-column {
+     padding: 0 15px 0 60px;
+    ;
 }
-
-@media screen and (max-width: 600px) {
-    .section-column {
-        padding: 0 30px 0px 30px;
+ @media screen and (max-width: 600px) {
+     .section-column {
+         padding: 0 30px 0px 30px;
     }
-
 }
-
-
-/*--------------------------------------Navigation  */
-
-
-.nav {
-    overflow: hidden;
+/*--------------------------------------Navigation */
+ .nav {
+     overflow: hidden;
 }
-
-.nav a {
-    
-    display: block;
-    color: #F1FAEE;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Acme", serif;
-    font-weight: 700;  
+ .nav a {
+     display: block;
+     color: #F1FAEE;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 25px;
+     font-family: "Acme", serif;
+     font-weight: 700;
 }
-
-.nav a:hover {
-    background-color: #BDD5EA;
-    color: #E63946;
+ .nav a:hover {
+     background-color: #BDD5EA;
+     color: #E63946;
 }
  .nav a.active {
      background-color: #1D3557;
      color: #F1FAEE;
- }
-
+}
  .nav .icon {
      display: none;
- }
-
-@media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-        float: right;
-        display: block;
-        position: absolute;
-        margin-left: 84%;
+}
+ @media screen and (max-width: 600px) {
+     .nav a:not(:first-child) {
+        display: none;
+    }
+     .nav a.icon {
+         float: right;
+         display: block;
+         position: absolute;
+         margin-left: 84%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .nav.responsive { position: relative;}
-    .nav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+ @media screen and (max-width: 600px) {
+     .nav.responsive {
+         position: relative;
     }
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        font-size: 15px;
+     .nav.responsive .icon {
+         position: absolute;
+         right: 0;
+         top: 0;
+    }
+     .nav.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+         font-size: 15px;
     }
 }
-/*--------------------------------------Hover.css  */
-
-
-hvr-sweep-top-bottom:before {
-    background: rgba(0,0,0, 0.2)
+/*--------------------------------------Hover.css */
+ hvr-sweep-top-bottom:before {
+     background: rgba(0,0,0, 0.2) 
 }
-
-/*--------------------------------------Hero  */
+/*--------------------------------------Hero */
  .hero {
      border-bottom: 5px solid #E63946;
      border-top: 5px solid #E63946;
      height: auto;
      background-image: url("/assets/images/sheet-music-bg.jpg");
-    background-size: cover;
- }
-
+     background-size: cover;
+}
  .hero-text {
      height: 100%;
      max-width: 430px;
      text-align: center;
      padding: 10px 15px;
      margin: 0 auto;
- }
-
+}
  .hero-text p {
      margin-top: 10px;
-    font-family: fantasy;
-    font-size: 15px;
-    color: #F1FAEE;
-    line-height: 27px;
-    padding: 15px;
- }
-
-  .w3-content img {
+     font-family: fantasy;
+     font-size: 15px;
+     color: #F1FAEE;
+     line-height: 27px;
+     padding: 15px;
+}
+ .w3-content img {
      width: 100%;
      max-height: 415px;
      padding: 10px;
-     border: 4px solid #457B9D
- }
-
-  .hero-text h2 {
-        color: #FE5F55;
-        font-family: "Fondamento", serif;
-        font-size: 1.5em;
+     border: 4px solid #457B9D 
 }
-
-    
-    /*--------------------------------------Audio */
-audio {
+ .hero-text h2 {
+     color: #FE5F55;
+     font-family: "Fondamento", serif;
+     font-size: 1.5em;
+}
+/*--------------------------------------Audio */
+ audio {
      width: 280px;
 }
-.audio-controls {
-    padding-bottom: 10px;
-   
+ .audio-controls {
+     padding-bottom: 10px;
 }
-
-
  @media screen and (max-width: 600px) {
-    .hero {
-     height: auto;
-     background-size: cover;
+     .hero {
+         height: auto;
+         background-size: cover;
     }
-
-    .hero-text {
-        width: 100%;
-        overflow: hidden;
-        height: auto;
-        padding: 10px;
-        margin: 0 auto;
+     .hero-text {
+         width: 100%;
+         overflow: hidden;
+         height: auto;
+         padding: 10px;
+         margin: 0 auto;
     }
-    
-    .hero-text h2 {
-        font-size: 17px;
+     .hero-text h2 {
+         font-size: 17px;
     }
-
-    .hero-text p {
+     .hero-text p {
          font-size: 14px;
          font-weight: 100;
     }
-    
-    .w3-content img {
-        height: 176px;
+     .w3-content img {
+         height: 176px;
     }
-
-    audio {
-     width: 260px;
+     audio {
+         width: 260px;
     }
 }
-
 /*--------------------------------------The Real Ambassadors */
-.real-ambassadors {
-    border-bottom: 5px solid #E63946;
-    max-height: 254px;
+ .real-ambassadors {
+     border-bottom: 5px solid #E63946;
+     max-height: 254px;
 }
-
-.real-ambassadors h3 { 
-    color: #F1FAEE;
-    font-family: "Acme", serif;  
-    padding: 45px 0 20px;
+ .real-ambassadors h3 {
+     color: #F1FAEE;
+     font-family: "Acme", serif;
+     padding: 45px 0 20px;
 }
-
-.real-ambassadors p {
-    color: #F1FAEE;
-    font-family: "Fondamento", serif;
-    font-size: 1.2em;
+ .real-ambassadors p {
+     color: #F1FAEE;
+     font-family: "Fondamento", serif;
+     font-size: 1.2em;
 }
-
-.real-ambassador-img {
-    height: 100%;
-    padding: 15px 0 0px 60px;
-    max-height: 238px;
+ .real-ambassador-img {
+     height: 100%;
+     padding: 15px 0 0px 60px;
+     max-height: 238px;
 }
-
-
-@media screen and (max-width: 600px) {
-
-    .real-ambassadors {
-        max-height: 100%;
+ @media screen and (max-width: 600px) {
+     .real-ambassadors {
+         max-height: 100%;
     }
-
-    .real-ambassadors h3 { 
-        padding: 15px;
-        font-size: 1.5em;
+     .real-ambassadors h3 {
+         padding: 15px;
+         font-size: 1.5em;
     }
-
-    .real-ambassadors p {
-        font-size: 1em;  
+     .real-ambassadors p {
+         font-size: 1em;
+    }
+     .real-ambassador-img {
+         height: 100%;
+         padding: 0;
+         max-height: 280px;
+    }
 }
-   .real-ambassador-img {
-        height: 100%;
-        padding: 0;
-        max-height: 280px;
-        }
-}
-
 /*--------------------------------------Quartet Members */
-.quartet-members {
-
-    border-top: 5px solid #E63946;
-    height: auto;
-    background-color: #333;
-    background-image: url("/assets/images/sheet-music-bg.jpg");
-    background-size: cover;
+ .quartet-members {
+     border-top: 5px solid #E63946;
+     height: auto;
+     background-color: #333;
+     background-image: url("/assets/images/sheet-music-bg.jpg");
+     background-size: cover;
 }
-
-.quartet-members .tab {
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 50px;
+ .quartet-members .tab {
+     margin-bottom: 20px;
+     text-align: center;
+     line-height: 50px;
 }
-
-.quartet-members .tablinks {
-    color:#F1FAEE;
-    background-color:#457B9D;
-    margin-bottom: 5px;
-    font-weight: 700;
+ .quartet-members .tablinks {
+     color:#F1FAEE;
+     background-color:#457B9D;
+     margin-bottom: 5px;
+     font-weight: 700;
 }
-
-.quartet-members .tabcontent {
-    color: #F1FAEE;
-    background-color: #000;
-    margin-bottom: 50px;
-    padding: 15px;
-    border-top: 30px solid #457B9D;
-    border-bottom: 30px solid #457B9D;
-    border-left: 15px solid #457B9D;
-    border-right: 15px solid #457B9D;
-    
+ .quartet-members .tabcontent {
+     color: #F1FAEE;
+     background-color: #000;
+     margin-bottom: 50px;
+     padding: 15px;
+     border-top: 30px solid #457B9D;
+     border-bottom: 30px solid #457B9D;
+     border-left: 15px solid #457B9D;
+     border-right: 15px solid #457B9D;
 }
-
-.quartet-members .tabcontent img {
-    width: 70px;
+ .quartet-members .tabcontent img {
+     width: 70px;
 }
-
  .quartet-members-text {
      height: auto;
      max-width: 430px;
      text-align: center;
      padding: 10px 15px;
      margin: 0 auto;
- }
-
-.quartet-members h3 { 
-        color: #FE5F55;
-        font-family: "Fondamento", serif;
-        font-size: 1.5em;
-        margin-top: 15px;
-        margin-bottom: 20px;
 }
-
-.quartet-members p {
-    color: #F1FAEE;
-    font-family: "Helvetica", sans-serif;
-    font-size: 1.2em;
-    padding: 15px;
+ .quartet-members h3 {
+     color: #FE5F55;
+     font-family: "Fondamento", serif;
+     font-size: 1.5em;
+     margin-top: 15px;
+     margin-bottom: 20px;
 }
-
-.quartet-members img {
-    width: 100%;
+ .quartet-members p {
+     color: #F1FAEE;
+     font-family: "Helvetica", sans-serif;
+     font-size: 1.2em;
+     padding: 15px;
+}
+ .quartet-members img {
+     width: 100%;
      max-height: 333px;
      padding: 10px;
 }
-
-
-@media screen and (max-width: 600px) {
-
-    .quartet-members {
-        max-height: 100%;
+ @media screen and (max-width: 600px) {
+     .quartet-members {
+         max-height: 100%;
     }
-
-    .quartet-members h3 { 
-        padding: 15px;
-        font-size: 1.5em;
+     .quartet-members h3 {
+         padding: 15px;
+         font-size: 1.5em;
     }
-
-    .quartet-members p {
-        font-size: 1em;  
+     .quartet-members p {
+         font-size: 1em;
+    }
+     .quartet-members-img {
+         height: 100%;
+         padding: 0;
+         max-height: 280px;
+    }
 }
-   .quartet-members-img {
-        height: 100%;
-        padding: 0;
-        max-height: 280px;
-        }
+/*--------------------------------------Photo gallery -------*/
+ .quartet-photos {
+     background-color: #333;
+     background-repeat: no-repeat;
+     color: #F1FAEE;
+     border-bottom: 5px solid #E63946;
+     border-top: 5px solid #E63946;
+     padding: 15px;
+     background-image: url("/assets/images/sheet-music-bg.jpg");
+     background-size: cover;
 }
-
-/*--------------------------------------Photo gallery  -------*/
-.quartet-photos {
-    background-color: #333;
-    background-repeat: no-repeat;
-    color: #F1FAEE;
-    border-bottom: 5px solid #E63946;
-    border-top: 5px solid #E63946;
-    padding: 15px;
-    background-image: url("/assets/images/sheet-music-bg.jpg");
-    background-size: cover;
-}
-
  .quartet-photos-text {
      height: auto;
      max-width: 430px;
      text-align: center;
      padding: 10px 15px;
      margin: 0 auto;
- }
-
-.quartet-photos h2 { 
-        color: #FE5F55;
-        font-family: "Fondamento", serif;
-        font-size: 1.5em;
-        margin-top: 15px;
-        margin-bottom: 20px;
 }
-
-.quartet-photos p {
-    color: #F1FAEE;
-    font-family: "Helvetica", sans-serif;
-    font-size: 1.2em;
+ .quartet-photos h2 {
+     color: #FE5F55;
+     font-family: "Fondamento", serif;
+     font-size: 1.5em;
+     margin-top: 15px;
+     margin-bottom: 20px;
 }
-
-.quartet-photos img {
-    width: 100%;
+ .quartet-photos p {
+     color: #F1FAEE;
+     font-family: "Helvetica", sans-serif;
+     font-size: 1.2em;
+}
+ .quartet-photos img {
+     width: 100%;
      max-height: 333px;
      padding: 10px;
 }
-
-
-/*********************************************w3schools/*******************************************
-            *    Title: <Responsive Photo Gallery Tutorial> 
-            *    Author: <W3schools>
-            *    Date: <7/19/20>
-            *    Availability: <https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive>
-            *
-            ****************************************************************************************/
-div.gallery {
-    border: 1px solid #ccc;
+/*********************************************w3schools
+/******************************************* * Title: <Responsive Photo Gallery Tutorial> * Author: <W3schools> * Date: <7/19/20> * Availability: <https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive> * ****************************************************************************************/
+ div.gallery {
+     border: 1px solid #ccc;
 }
-
-div.gallery:hover {
-    border: 1px solid #777;
+ div.gallery:hover {
+     border: 1px solid #777;
 }
-
-div.gallery img {
-    width: 100%;
-    max-height: 200px;
+ div.gallery img {
+     width: 100%;
+     max-height: 200px;
 }
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    background-color: #F1FAEE;
-    color: #333;
+ div.desc {
+     padding: 15px;
+     text-align: center;
+     background-color: #F1FAEE;
+     color: #333;
 }
-
-.responsive {
-    padding: 6px;
-    float: left;
-    width: 24.99999%;
+/*-------------Discography-------------------------------------------------------------------------------*/
+ div.album-gallery {
+     border: 1px solid #ccc;
+     text-align: center;
 }
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-  }
+ div.album-gallery:hover {
+     border: 1px solid #777;
 }
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-  }
+ div.album-gallery img {
+     width: 70% 
 }
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+ div.album-desc {
+     padding: 15px;
+     text-align: center;
+     background-color: #333;
+     color: #F1FAEE;
 }
-
-
-/*--------------------------------------Footer  */
-
-footer {
-    color: #F1FAEE;
-    min-height: 120px;
-    text-align: center;
+ .responsive {
+     padding: 6px;
+     float: left;
+     width: 24.99999%;
 }
-
-.social-links {
-    margin-top: 35px;
-    padding-bottom: 15px;
+ @media only screen and (max-width: 700px) {
+     .responsive {
+         width: 49.99999%;
+         margin: 6px 0;
+    }
+     div.gallery img {
+         width: 40%;
+         max-height: 120px;
+    }
+     div.album-gallery img {
+         width: 100% 
+    }
+     div.album-desc {
+         padding: 10px;
+         font-size: 10px;
+         text-align: center;
+         background-color: #333;
+         color: #F1FAEE;
+    }
 }
-
-.social-links li a i {
-    width: 40px;
-    height: 40px;
-    padding: 17px 7px;
-    border-radius: 10%;
-    font-size: 26px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: #457B9D;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+ @media only screen and (max-width: 500px) {
+     .responsive {
+         width: 48%;
+    }
 }
-
-.social-links li a i:hover {
-    background: #E63946;
-
+ .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+/*--------------------------------------Contact */
+ .contact {
+     border-bottom: 5px solid #E63946;
+     border-top: 5px solid #E63946;
+     height: auto;
+     background-image: url("/assets/images/sheet-music-bg.jpg");
+     background-size: cover;
+}
+ .contact-container {
+     background-color: #333;
+     border: 5px solid #457B9D;
+     padding: 15px;
+}
+ .contact h3 {
+     color: #FE5F55;
+     font-family: "Fondamento", serif;
+     font-size: 1.5em;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+ .contact h5 {
+     color: #F1FAEE;
+     font-family: "Acme", serif;
+     font-size: 1.5em;
+     margin-top: 15px;
+     margin-bottom: 20px;
+}
+ .contact input {
+     margin-bottom: 15px;
+}
+ .contact button {
+     margin-top: 15px;
+}
+/*--------------------------------------Footer */
+ footer {
+     color: #F1FAEE;
+     min-height: 120px;
+     text-align: center;
+}
+ .social-links {
+     margin-top: 35px;
+     padding-bottom: 15px;
+}
+ .social-links li a i {
+     width: 40px;
+     height: 40px;
+     padding: 17px 7px;
+     border-radius: 10%;
+     font-size: 26px;
+     line-height: 7px;
+     text-align: center;
+     color: #fafafa;
+     background: #457B9D;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+}
+ .social-links li a i:hover {
+     background: #E63946;
 }
