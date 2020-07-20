@@ -82,7 +82,7 @@ This is a fan site for people who want to learn more about the David Brubeck Qua
                 https://www.youtube.com/watch?v=Tm-o8GIMtHQ
 
 
-        -  ####Source and credit for images used in Discography page
+         ####Source and credit for images used in Discography page
 
             -   davebrubeckjazz.com/***************************************************************************************
                         *    Title: <Album art and Titles credited to davebrubeckhazz.com> 
