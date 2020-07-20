@@ -16,6 +16,13 @@
 				<body>
 					<header>
 						<div class="row no-gutters">
+                        		<!--w3schools/***************************************************************************************
+            *    Title: <Responsive Topnav Tutorial>
+            *    Author: <W3schools>
+            *    Date: <7/16/20>
+            *    Availability: <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav>
+      
+            ***************************************************************************************/-->
 							<div class="nav bg-color-nav col-md-12 container-fluid" id="topNavmenu">
 								<a class="hvr-sweep-top-bottom" href="index.html">Home</a>
 								<a class="hvr-sweep-to-bottom  active" href="members.html">Members</a>
@@ -26,14 +33,7 @@
 									<i class="fa fa-bars"></i>
 								</a>
 							</div>
-							<!--w3schools/***************************************************************************************
-            *    Title: <Responsive Topnav Tutorial><w3-animate-fading gallery>
-            *    Author: <W3schools>
-            *    Date: <7/16/20>
-            *    Availability: <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav>
-            *                   <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_fading>
-            *
-            ***************************************************************************************/-->
+					
 							<script>
                 function myFunction() {
                     var x = document.getElementById("topNavmenu");
@@ -45,6 +45,7 @@
                     }
                 }
             </script>
+            		<!--w3schools/End Responsive Topnav Tutorial>-->
 							<div class=" row no-gutters quartet-members bg-color-quartet-members container-fluid">
 								<div class="w3-content w3-section col-md-8">
 									<img class="" src="assets/images/hero-bg-1.jpg" alt="Members of the Dave Brubeck Quartet">
@@ -450,21 +451,23 @@
 																														</p>
 																													</div>
 																													<script>
-            function openBio(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-            }
+                                                                                                                        function openBio(evt, cityName) {
+                                                                                                                        var i, tabcontent, tablinks;
+                                                                                                                        tabcontent = document.getElementsByClassName("tabcontent");
+                                                                                                                        for (i = 0; i < tabcontent.length; i++) {
+                                                                                                                            tabcontent[i].style.display = "none";
+                                                                                                                        }
+                                                                                                                        tablinks = document.getElementsByClassName("tablinks");
+                                                                                                                        for (i = 0; i < tablinks.length; i++) {
+                                                                                                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                                                                                                        }
+                                                                                                                        document.getElementById(cityName).style.display = "block";
+                                                                                                                        evt.currentTarget.className += " active";
+                                                                                                                        }
             
 																													</script>
+                                                                                                                    
+                                                                                                                  	<!--w3schools/ End <Tab Menu Tutorial><How TO - Tabs>-->  
 																												</div>
 																											</div>
 																										</div>

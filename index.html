@@ -17,6 +17,13 @@
 <body>
     <header>
         <div class="row no-gutters">
+         <!--w3schools/***************************************************************************************
+            *    Title: <Responsive Topnav Tutorial> 
+            *    Author: <W3schools>
+            *    Date: <7/16/20>
+            *    Availability: <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav>
+            *                   
+            ***************************************************************************************/-->
             <div class="nav bg-color-nav col-md-12 container-fluid" id="topNavmenu">
                 <a class="hvr-sweep-top-bottom active" href="index.html">Home</a>
                 <a class="hvr-sweep-to-bottom" href="members.html">Members</a>
@@ -27,12 +34,13 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <!--w3schools/***************************************************************************************
-            *    Title: <Responsive Topnav Tutorial> <w3-animate-fading gallery>
+            <!--w3schools/* End Responsive Topnav-->
+
+             <!--w3schools/***************************************************************************************
+            *    Title: <w3-animate-fading gallery>
             *    Author: <W3schools>
             *    Date: <7/16/20>
-            *    Availability: <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav>
-            *                   <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_fading>
+            *    Availability: <https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_fading>
             *
             ***************************************************************************************/-->
             <script>
@@ -56,6 +64,23 @@
                     <img class="mySlides w3-animate-fading" src="assets/images/hero-bg-6.jpg" alt="Dave Brubeck Slider background 6">
                    
                 </div>
+                 <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 9000);    
+                        }
+                    </script>
+                 <!--w3schools/End w3-animate-fading gallery-->
                 <div class="col-md-4 hero-text bg-color-hero-text">
                     <h2>Dave Brubeck Quartet</h2>
                      <p>
@@ -77,23 +102,6 @@
                 </div>
                 <!--Bensound.com (The Jazz Piano). Desicription : Light jazz trio royalty free music: Piano, Double-Bass and drums.
                     Music: https://www.bensound.com/royalty-free-music/jazz-->
-                    <script>
-                        var myIndex = 0;
-                        carousel();
-
-                        function carousel() {
-                        var i;
-                        var x = document.getElementsByClassName("mySlides");
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";  
-                        }
-                        myIndex++;
-                        if (myIndex > x.length) {myIndex = 1}    
-                        x[myIndex-1].style.display = "block";  
-                        setTimeout(carousel, 9000);    
-                        }
-                    </script>
-
             </div>
         </div>
     </header>
