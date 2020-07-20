@@ -8,7 +8,7 @@
 }
  body {
      margin: 0;
-     background-color: #A8DADC;
+     background-color: #000;
 }
 /*--------------------------------------colors */
  .bg-color-hero {
@@ -117,8 +117,6 @@
      background-size: cover;
 }
  .hero-text {
-     height: 100%;
-     max-width: 430px;
      text-align: center;
      padding: 10px 15px;
      margin: 0 auto;
@@ -144,7 +142,8 @@
 }
 /*--------------------------------------Audio */
  audio {
-     width: 280px;
+     width: 100%;
+     max-width: 280px;
 }
  .audio-controls {
      padding-bottom: 10px;
@@ -177,8 +176,7 @@
 }
 /*--------------------------------------The Real Ambassadors */
  .real-ambassadors {
-     border-bottom: 5px solid #E63946;
-     max-height: 254px;
+     height: auto;
 }
  .real-ambassadors h3 {
      color: #F1FAEE;
@@ -189,10 +187,11 @@
      color: #F1FAEE;
      font-family: "Fondamento", serif;
      font-size: 1.2em;
+     padding: 15px;
 }
  .real-ambassador-img {
      height: 100%;
-     padding: 15px 0 0px 60px;
+     padding: 15px 0 0px 0px;
      max-height: 238px;
 }
  @media screen and (max-width: 600px) {
@@ -429,6 +428,7 @@
      color: #F1FAEE;
      min-height: 120px;
      text-align: center;
+     border-top: 5px solid #E63946;
 }
  .social-links {
      margin-top: 35px;
@@ -452,3 +452,26 @@
  .social-links li a i:hover {
      background: #E63946;
 }
+
+@media screen and (min-width: 1500px) {
+
+    footer {
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+   .real-ambassadors p {
+    color: #F1FAEE;
+    font-family: "Fondamento", serif;
+    font-size: 2em;
+    padding: 15px;
+}
+
+    .hero-text p {
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+}
+

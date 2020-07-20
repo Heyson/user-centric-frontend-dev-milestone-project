@@ -175,7 +175,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   There are no known bugs. Any improvements that can be made to the site to achieve a better performance score has been documented in the lighthouse audit reports.
+-  Any improvements that can be made to the site to achieve a better performance score has been documented in the lighthouse audit reports.
 
 ## Deployment
 
