@@ -1,6 +1,6 @@
 <h1 align="center">Dave Brubeck Quartet Website</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://heyson.github.io/user-centric-frontend-dev-milestone-project/)
 
 This is a fan site for people who want to learn more about the David Brubeck Quartet. Visitors can explore quartet member bios, the full commercial discography, view some images of the band, view David Brubecks social media accounts and finally reach out to the band in the contacts page.
 
